@@ -8,16 +8,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Cart</a>
+            <a class="navbar-brand" href="{{ route('home') }}">Cart</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('cart.index') }}">
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                        Cart(0)
+                        Cart({{ count(session('cart')) }})
                     </a>
                 </li>
             </ul>
