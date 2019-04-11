@@ -49,7 +49,7 @@
 
                     @include('cart.partials.summary')
 
-                    <a href="#" class="btn btn-default">Checkout</a>
+                    <a href="{{ route('order.index') }}" class="btn btn-default">Checkout</a>
                 </div>
             @endif
         </div>
