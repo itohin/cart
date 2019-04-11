@@ -25,11 +25,11 @@ class OrderRequest extends FormRequest
     {
         return [
             'email' => 'required|email',
-            'name' => 'required|alpha',
+            'name' => 'required',
             'address1' => 'required',
             'address2' => '',
-            'city' => 'required|alpha_num',
-            'postal_code' => 'required|alpha_num',
+            'city' => 'required',
+            'postal_code' => 'required',
         ];
     }
 }

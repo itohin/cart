@@ -22,3 +22,5 @@ Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::get('/cart/add/{slug}/{quantity}', 'CartController@add')->name('cart.add');
 Route::post('/cart/update/{slug}', 'CartController@update')->name('cart.update');
 
+Route::get('/braintree/token', 'BraintreeController@token')->name('braintree.token');
+

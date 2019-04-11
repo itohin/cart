@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    public $quantity = null;
+
     public function getRouteKeyName()
     {
         return 'slug';
@@ -33,5 +35,10 @@ class Product extends Model
     public function hasStock($quantity)
     {
         return $this->stock >= $quantity;
+    }
+
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class, 'orders_products')->withPivot('quantity');
     }
 }
