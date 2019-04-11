@@ -7,6 +7,7 @@ use App\Customer;
 use App\Events\OrderWasCreated;
 use App\Http\Basket\Basket;
 use App\Http\Requests\OrderRequest;
+use App\Order;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -29,9 +30,15 @@ class OrderController extends Controller
         return view('order.index');
     }
 
-    public function show($hash)
+    public function show($hash, Order $order)
     {
-        return view('order.show');
+        $order = $order->with(['address', 'products'])->where('hash', $hash)->first();
+
+        if (!$order) {
+            return redirect()->route('home');
+        }
+
+        return view('order.show', compact('order'));
     }
 
     public function store(OrderRequest $request)
@@ -88,6 +95,8 @@ class OrderController extends Controller
         }
 
         event(new OrderWasCreated($order, $this->basket, $result->transaction->id));
+
+        return redirect()->route('order.show', [$hash]);
     }
 
     protected function getQuantities($items)
