@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Address;
 use App\Customer;
+use App\Events\OrderWasCreated;
 use App\Http\Basket\Basket;
 use App\Http\Requests\OrderRequest;
 use Illuminate\Http\Request;
@@ -26,6 +27,11 @@ class OrderController extends Controller
         }
 
         return view('order.index');
+    }
+
+    public function show($hash)
+    {
+        return view('order.show');
     }
 
     public function store(OrderRequest $request)
@@ -74,7 +80,14 @@ class OrderController extends Controller
             ]
         ]);
 
-        dd($result);
+        if (!$result->success) {
+            $order->payment()->create([
+                'failed' => true
+            ]);
+            return redirect()->route('order.index');
+        }
+
+        event(new OrderWasCreated($order, $this->basket, $result->transaction->id));
     }
 
     protected function getQuantities($items)
