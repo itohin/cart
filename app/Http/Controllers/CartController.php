@@ -38,4 +38,21 @@ class CartController extends Controller
 
         return redirect()->route('cart.index');
     }
+
+    public function update($slug, Request $request)
+    {
+        $product = Product::where('slug', $slug)->first();
+
+        if (!$product) {
+            return redirect()->route('home');
+        }
+
+        try {
+            $this->basket->update($product, $request->quantity);
+        } catch (QuantityExceededException $e) {
+
+        }
+
+        return redirect()->route('cart.index');
+    }
 }

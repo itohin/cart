@@ -18,7 +18,19 @@
                                 <tr>
                                     <td><a href="{{ route('products.show', [$item->slug]) }}">{{ $item->title }}</a></td>
                                     <td>${{ number_format($item->price, 2) }}</td>
-                                    <td>{{ $item->quantity }}</td>
+                                    <td>
+                                        <form action="{{ route('cart.update', [$item->slug]) }}" method="post" class="form-inline">
+                                            {{ csrf_field() }}
+                                            <select name="quantity" class="form-control input-sm">
+                                                @for ($i = 1; $i <= $item->stock; $i++)
+                                                    <option value="{{ $i }}"{{ $i == $item->quantity ? ' selected' : '' }}>{{ $i }}</option>
+                                                @endfor
+                                                <option value="0">None</option>
+                                            </select>
+
+                                            <input type="submit" class="btn btn-default btn-sm" value="Update">
+                                        </form>
+                                    </td>
                                 </tr>
 
                             @endforeach

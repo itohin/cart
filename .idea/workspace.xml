@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb676ec-2a32-4904-a853-6182b46b2bb5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/cart/partials/summary.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Basket/Basket.php" afterPath="$PROJECT_DIR$/app/Http/Basket/Basket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php" afterPath="$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cart/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/cart/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +26,8 @@
       <file leaf-file-name="CartController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="827">
+              <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
               <folding>
                 <element signature="e#40#67#0#PHP" expanded="true" />
               </folding>
@@ -38,11 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Basket.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="19" column="67" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="78" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Basket.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Basket/Basket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+            <state relative-caret-position="604">
+              <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
               <folding>
                 <element signature="e#36#93#0#PHP" expanded="true" />
               </folding>
@@ -50,39 +59,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuantityExceededException.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cart/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-              <folding>
-                <marker date="1554965660000" expanded="true" signature="57:1602" ph="..." />
-                <marker date="1554965660000" expanded="true" signature="88:1209" ph="..." />
-                <marker date="1554965660000" expanded="true" signature="1240:1591" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="summary.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/cart/partials/summary.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="70" lean-forward="false" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-              <folding>
-                <marker date="1554965614000" expanded="true" signature="138:197" ph="..." />
-                <marker date="1554965614000" expanded="true" signature="206:338" ph="..." />
-              </folding>
+            <state relative-caret-position="582">
+              <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,13 +101,13 @@
         <option value="$PROJECT_DIR$/resources/views/products/product.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/cart/partials/summary.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/cart/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
         <option value="$PROJECT_DIR$/app/Http/Basket/Basket.php" />
-        <option value="$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php" />
       </list>
     </option>
   </component>
@@ -368,7 +350,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="Qua&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/app/Http/Basket/Exceptions/QuantityExceededException.php&#10;Cart&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/app/Http/Controllers/CartController.php&#10;ComposerServiceProvider&#9;FILE&#9;file:///Volumes/Toha/04.2019/code/ads/app/Providers/ComposerServiceProvider.php&#10;pro&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/products/product.blade.php&#10;na&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/partials/nav.blade.php&#10;web&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/routes/web.php&#10;CartController&#9;null&#9;null&#10;nav&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/partials/nav.blade.php&#10;pack&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/package.json&#10;Produ&#9;null&#9;null&#10;Product&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/database/migrations/2019_04_09_170950_create_products_table.php&#10;2019_04_09_170602_create_cart_table&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/database/migrations/2019_04_09_170602_create_cart_table.php" />
+    <property name="SearchEverywhereHistoryKey" value="Bas&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/app/Http/Basket/Basket.php&#10;web&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/routes/web.php&#10;cart/inde&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/cart/index.blade.php&#10;Qua&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/app/Http/Basket/Exceptions/QuantityExceededException.php&#10;Cart&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/app/Http/Controllers/CartController.php&#10;ComposerServiceProvider&#9;FILE&#9;file:///Volumes/Toha/04.2019/code/ads/app/Providers/ComposerServiceProvider.php&#10;pro&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/products/product.blade.php&#10;na&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/partials/nav.blade.php&#10;CartController&#9;null&#9;null&#10;nav&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/resources/views/partials/nav.blade.php&#10;pack&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/package.json&#10;Produ&#9;null&#9;null&#10;Product&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/database/migrations/2019_04_09_170950_create_products_table.php&#10;2019_04_09_170602_create_cart_table&#9;FILE&#9;file:///Users/iToha/Desktop/code/cart/database/migrations/2019_04_09_170602_create_cart_table.php" />
     <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
@@ -469,12 +451,12 @@
       <workItem from="1554826684085" duration="3107000" />
       <workItem from="1554834983274" duration="5848000" />
       <workItem from="1554872827036" duration="8829000" />
-      <workItem from="1554960413790" duration="4332000" />
+      <workItem from="1554960413790" duration="5908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22116000" />
+    <option name="totallyTimeSpent" value="23692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -635,6 +617,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,14 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cart/partials/summary.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -863,22 +838,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="67" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="78" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cart/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-          <folding>
-            <marker date="1554965660000" expanded="true" signature="57:1602" ph="..." />
-            <marker date="1554965660000" expanded="true" signature="88:1209" ph="..." />
-            <marker date="1554965660000" expanded="true" signature="1240:1591" ph="..." />
-          </folding>
+        <state relative-caret-position="582">
+          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="827">
+          <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
           <folding>
             <element signature="e#40#67#0#PHP" expanded="true" />
           </folding>
@@ -887,19 +876,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Basket/Basket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+        <state relative-caret-position="604">
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding>
             <element signature="e#36#93#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Basket/Exceptions/QuantityExceededException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>

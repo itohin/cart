@@ -17,4 +17,5 @@ Route::get('/products/{product}', 'ProductController@show')->name('products.show
 
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::get('/cart/add/{slug}/{quantity}', 'CartController@add')->name('cart.add');
+Route::post('/cart/update/{slug}', 'CartController@update')->name('cart.update');
 
