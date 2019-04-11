@@ -17,7 +17,7 @@
                 <li>
                     <a href="{{ route('cart.index') }}">
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                        Cart({{ count(session('cart')) }})
+                        Cart({{ $basket->itemsCount() }})
                     </a>
                 </li>
             </ul>

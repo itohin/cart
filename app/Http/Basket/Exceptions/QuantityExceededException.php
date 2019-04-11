@@ -2,7 +2,7 @@
 
 namespace App\Http\Basket\Exceptions;
 
-use Exception
+use Exception;
 
 class QuantityExceededException extends Exception
 {

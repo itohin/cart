@@ -18,8 +18,7 @@ class CartController extends Controller
 
     public function index()
     {
-
-        //dd($this->basket->all());
+        $this->basket->refresh();
         return view('cart.index');
     }
 

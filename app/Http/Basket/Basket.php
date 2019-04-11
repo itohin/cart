@@ -74,11 +74,37 @@ class Basket
             return $product;
         });
 
-        return $items->toArray();
+        return $items;
     }
 
     public function itemsCount()
     {
+        if (!session()->has('cart')) {
+            return 0;
+        }
+
         return count(session('cart'));
+    }
+
+    public function refresh()
+    {
+        foreach ($this->all() as $item)
+        {
+            if (!$item->hasStock($item->quantity)) {
+                $this->update($item, $item->stock);
+            }
+        }
+    }
+
+    public function subTotal()
+    {
+        $total = $this->all()->reduce(function ($carry, $item) {
+            if (!$item->outOfStock()) {
+                $carry = $carry + $item->price * $item->quantity;
+            }
+            return $carry;
+        }, 0);
+
+        return $total;
     }
 }
