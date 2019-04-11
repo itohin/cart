@@ -36,6 +36,10 @@ class OrderController extends Controller
             return redirect()->route('cart.index');
         }
 
+        if (!$request->payment_method_nonce) {
+            return redirect()->route('order.index');
+        }
+
         $hash = bin2hex(random_bytes(32));
 
         $customer = Customer::firstOrCreate([
@@ -61,6 +65,16 @@ class OrderController extends Controller
             $this->basket->all(),
             $this->getQuantities($this->basket->all())
         );
+
+        $result = \Braintree_Transaction::sale([
+            'amount' => $this->basket->subTotal() + 5,
+            'paymentMethodNonce' => $request->payment_method_nonce,
+            'options' => [
+                'submitForSettlement' => true
+            ]
+        ]);
+
+        dd($result);
     }
 
     protected function getQuantities($items)
